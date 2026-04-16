@@ -1,0 +1,35 @@
+package shape;
+
+public class Inheritanceandpolymorphism {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		class Shape {
+		    void draw() {
+		        System.out.println("Drawing a shape");
+		    }
+		}
+
+		class Circle extends Shape {
+		    void draw() {
+		        System.out.println("Drawing a circle");
+		    }
+		}
+
+		class Square extends Shape {
+		    void draw() {
+		        System.out.println("Drawing a square");
+		    }
+		}
+
+		public class Main {
+		    public static void main(String[] args) {
+		        Shape s1 = new Circle();
+		        Shape s2 = new Square();
+		        s1.draw();
+		        s2.draw();
+		    }
+		}
+	}
+
+}
